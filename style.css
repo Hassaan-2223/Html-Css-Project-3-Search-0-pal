@@ -1,0 +1,1005 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    color: #444444;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+/* color: #002147 
+   yellow: #ffc107 */
+
+/* --------------------------------- UTILITY CLASSES ------------------------------- */
+
+.container{
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+
+}
+
+.br-clr{
+    border: 2px solid red;
+}
+
+
+
+/* --------------- DIFFERENT SECTION HEADING ------------------  */
+
+.section-heading{
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+}
+.span{
+    color: #ffc107;
+}
+.tittle{
+    background-color: #002147;
+    padding: 6rem;
+    border-top: 2px solid #ffc107;
+}
+
+/* --------------- SAME SECTION STYLING -------------- */
+
+.jobs{
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0;
+    padding: 0 5rem;
+}
+.jobs .job-img{
+    /* height: 30rem; */
+    /* width: 34rem; */
+    width: 30%;
+    height: auto;
+}
+.job-img img{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #002147;
+    border-radius: 3rem;
+}
+.job-content{
+    display: flex;
+    flex-direction: column;
+    margin: auto 5rem;
+    width: 60%;
+
+
+}
+
+.h3{
+    border-left: 3px solid #ffc107;
+}
+.job-content .h3 p{
+    font-size: 2.1rem;
+    color: #002147;
+    padding-left: 4rem;
+}
+
+.job-content .btn{
+    display: inline-block;
+    margin: 2rem auto;
+}
+
+.job-content .btn input{
+    height: 4rem;
+    width: 15rem;
+    background-color: #002147;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+}
+
+/* .section-4{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20rem;
+}
+
+#h3{
+    margin-left: -20rem;
+}
+
+
+.section-3::after{
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+
+
+/* ------------------------------- NAVIGATION STYLING -------------------------------- */
+
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+nav{
+    border-bottom: 2px solid #002147;
+    background-color: #fff;
+    position: sticky;
+    top: 0%;
+    z-index: 99;
+
+}
+
+.navigation .logo img{
+    width: auto;
+    height: 7.9rem;
+}
+
+
+.navigation .nav-items li{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    /* margin: 0 1rem; */
+    padding: 32px 10px;
+}
+.nav-items ul a{
+    color: #002147;
+    transition: color 0.5s ease-in-out;
+
+}
+
+.nav-items ul a:hover{
+    color: #ffc107 ;
+}
+.nav-items ul a:active{
+    color: #ffc107 ;
+}
+
+
+.nav-items ul .special{
+    display: inline-block;
+}
+
+.nav-items ul .special .drop-down{
+    position: absolute;
+    top: 50%;
+    right: -6%;
+    transform: scaleY(0);
+    background-color: #002147;  
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-items .special:hover .drop-down{
+    top: 99%;
+    transform: scaleY(1);
+    
+}
+
+.nav-items .special .drop-down a{
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+.nav-items .special .drop-down li{
+    border-bottom: 1px solid #003570;
+    width: 16rem;
+    height: 4rem;
+    padding: 10px 10px;
+}
+.nav-items .special .drop-down a:hover{
+    color: #ffc107;
+}
+
+.nav-items .special .drop-down{
+    display: none;
+}
+
+
+/* ---------------------------------------- HAMBURGER-MENU ------------------------------- */
+
+.navigation input{
+    display: none;
+}
+.navigation .hamburger-menu{
+    display: none;
+}
+
+
+
+/* ------------------------------------- SECTION-1-HEADING ---------------------------------------- */
+
+.sec-1{
+    padding-top: 3rem;
+    padding-bottom: 8rem;
+    background-color: #F2F2EF;
+    /* border-bottom: 1px solid #ffc107; */
+}
+
+.section-1 .heading{
+    font-size: 4rem;
+    text-align: center;
+    color: #002147;
+}
+.section-1 .heading::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #444444;
+    width: 30rem;
+    margin: 2rem auto;
+}
+.section-1 span{
+    color: #ffc107;
+}
+
+
+
+/* --------------------------------------- SECTION-1-CONTENT ------------------------------- */
+
+.box-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.box-wrapper .row{
+    display: flex;
+    justify-content: space-between;
+}
+.row .box-img{
+    text-align: center;
+    font-size: 2.2rem;
+    color: #002147;
+}
+
+.row h2 a{
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: #002147;
+}
+
+.row .box{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    background-color: #fff;
+    margin: 2rem 0;
+    box-shadow: 5px 5px 10px #b8b6b6;
+    padding: 2.1em;
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.row .box:hover{
+    transform: scale(1.1);
+    background-color: #ffc107;
+}
+
+
+
+/* ------------------------------------- SECTION-2 STYLING ----------------------------- */
+
+.section-2 .inputs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.inputs .row{
+    display: flex;
+    justify-content: space-between;
+}
+.inputs .row input{
+    width: 32.6%;
+    height: 4rem;
+    margin: 0.5rem;
+    font-size: 1.6rem;
+    border: 2px solid #002147;
+    color: #979797;
+    line-height: 1rem;
+}
+
+
+.inputs .row input[type="text"]:hover{
+    border: 2px solid #ffc107;
+}
+
+.inputs .row4{
+    display: flex;
+    justify-content: space-between;
+}
+.inputs .row4 input[type="text"]{
+    width: 32.6%;
+}
+.inputs .row4 input[type="button"]{
+    width: 15.8%;
+    background-color: #002147;
+    color: #fff;
+    transition: color 0.4s ease-in-out;
+}
+.inputs .row4 input[type="button"]:hover{
+    background-color: #ffc107;
+    border: none;
+}
+
+.section-2 select{
+    font-size: 1.5rem;
+    height: 4rem;
+    margin-left: 5px;
+    margin-top: 9px;
+    color:  #837d7d;
+    border: 2px solid #002147;
+}
+
+/* ---------------------------- SECTION -2-TABLE STYLING -----------------------------*/
+
+table, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 1.4rem;
+}
+table{
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+th{
+    height: 3rem;
+    background-color: #002147;
+    color: #ffc107;
+    text-align: left;
+    padding-left: 1rem;
+}
+td{
+    height: 5rem;
+    padding-left: 1rem;
+}
+td a{
+    color: #003570;
+}
+td i{
+    font-size: 2.6rem;
+    color: #003570;
+    transition: all 0.3s ease-in-out;
+}
+td i:hover{
+    color: #ffc107;
+}
+
+
+/* ----------------- PAGES STYLING --------------- */
+.pages{
+    text-align: center;
+}
+.pages .page{
+    display: inline-block;
+    height: 4rem;
+    width: 4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin: 0 0.2rem 3rem 0.2rem;
+    padding: 0.9rem 0;
+    background-color: #002147;
+    transition: all 0.3s ease-in-out;
+}
+.pages .page:hover{
+    background-color: #ffc107;
+}
+
+.pages .page-1{
+    background-color: #ffc107;
+}
+
+
+
+/* ------------------------------------ SECTION-5 STYLING ---------------------------- */
+
+.section-5 .companies{
+    display: flex;
+    justify-content: space-between;
+}
+
+.comp-img{
+    /* width: 30rem; */
+    width: 30%;
+    height: 15rem;
+    margin: 13rem 0;
+}
+
+.comp-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* --------------------------------- SECTION-6 STYLING --------------------------------- */
+
+.sec-6{
+    background-color: #002147;
+    height: auto;
+    border-bottom: 2px solid #ffc107;
+}
+.section-6{
+    display: flex;
+    justify-content: space-around;
+    padding: 8rem 0;
+}
+.section-6 .numbers{
+    color: #fff;
+    /* margin: 4rem; */
+    position: relative;
+    width: 20%;
+}
+.numbers p,h1{
+    display: inline-block;
+}
+
+.numbers p{
+    font-size: 2rem;
+    position: absolute;
+    margin-left: 0.5rem;
+    top: 10%;
+}
+
+.numbers h1{
+    font-size: 8rem;
+    font-weight: 400;
+}
+.numbers h1::after{
+    content: "";
+    display: block;
+    border-bottom: 2px solid #fff;
+    width: 60%;
+    margin: 1.3rem auto;
+}
+
+
+/* ----------------------------------- SECTION-7 STYING ----------------------------------- */
+
+.sec7-heading{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.sec7-heading h1{
+    font-size: 4.7rem;
+    font-weight: 400;
+    color: #002147;
+    word-spacing: 0.5rem;
+    margin-bottom: 2rem;
+}
+.sec7-heading p{
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+
+}
+
+
+.sec7-content-box{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+#row1{
+    animation: timing-differ 5s 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes timing-differ{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#row2{
+    animation: timing-differ1 3s 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+@keyframes timing-differ1{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.sec7-row{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+
+.sec7-row .content-box{
+    text-align: center;
+    margin: 2rem 0;
+    width: 30%;
+}
+.content-box .img-box{
+    background-color: #002147;
+    font-size: 4rem;
+    width:11rem;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+.content-box h1{
+    font-size: 2rem;
+    color: #002147;
+    margin-top: 2.5rem;
+    transition: color 0.4s ease-in-out;
+}
+
+.sec7-row .content-box:hover .img-box{
+    background-color: #ffc107;
+}
+.content-box h1:hover{
+    color: #ffc107;
+}
+
+
+/* --------------------- FOOTER STYLING ------------------------------ */
+footer{
+    background-color: #002147;
+    height: 5rem;
+}
+/* .copy-right{
+    text-align: center;
+} */
+.copy-rights p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    padding-top: 1em;
+}
+
+
+/* **************************************************************************** */
+
+
+
+
+/* ---------------------------------- RESOURCES PAGE ------------------------------------ */
+
+
+#resources-html{
+    background-color: #F2F2EF;
+
+}
+
+/* ---------------------------- SECTION-1-RS STYLING -------------------------- */
+
+.Res{
+    background-color: #002147;
+    height: 19rem;
+}
+
+.sec-1-RS h1{
+    font-size: 4.8rem;
+    font-weight: 700;
+    color: #ffc107;
+    margin-top: 6rem;
+}
+.sec-1-RS span{
+    color: #fff;
+}
+
+/* ------------------------------- SECTION-2-RS STYLING --------------------------------- */
+
+.webinar-img img{
+    width: 100%;
+}
+
+.webinar-content a{
+    color: rgb(24, 135, 179);
+    transition: all 0.4s ease-in-out;
+}
+.webinar-content a:hover{
+    color: #ffc107;
+}
+
+.content-1{
+    margin-bottom: 4rem;
+}
+
+.sec-2-RS{
+    width: 80%;
+    height: auto;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    background-color: #fff;
+    padding-left: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px #bebebe;
+}
+
+.sec-2-RS h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #002147;
+    margin: 1rem 0;
+}
+.sec-2-RS h1::after{
+    content: "";
+    display: block;
+    border-bottom: 2px solid #ffc107;
+    width: 50%;
+    margin-top: 0.5rem;
+}
+.rs-content::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.sec-2-RS p{
+    font-size: 2rem;
+    font-weight: 400;
+    color: black;
+    margin: 1.6rem 0 1rem 0;
+}
+
+.sec-2-RS p span{
+    font-weight: 700;
+}
+
+.sec-2-RS ul{
+    margin-left: 2rem;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+}
+.sec-2-RS ul li{
+    list-style: circle;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    margin: 0.6rem 0;
+}
+
+.Res-2{
+    margin-bottom: 2rem;
+}
+
+
+/* -------------------------------- COUNSELLING-PAGE STYLING ---------------------------- */
+
+
+
+/* ------------------------------- COUONSELLING-CONTENT STYLING ----------------------- */
+.counselling-content{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.counselling-content .h3{
+    border-left: none;
+    border-right: 2px solid #ffc107;
+    padding-right: 2rem;
+}
+.counselling-content img{
+    height: 30rem;
+}
+.counselling-content .h3{
+    margin-top: 2rem;
+}
+
+/* ---------------------------------- COUNSELLING-SEC-1 ------------------------------------- */
+
+.counselling-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8rem;
+    margin-bottom: 8rem; 
+}
+
+.counselling-1 .counseller{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+}
+/* .counseller .counseller-img{
+    width: 100%;
+} */
+.counseller-img img{
+    width: 80%;
+    height: 30rem;
+}
+
+.counseller-about h1{
+    font-size: 3.1rem;
+    font-weight: 500;
+    color: #002147;
+    margin: 2rem 0;
+}
+.counseller-about h1::after{
+    content: "";
+    display: block;
+    border-bottom: 4px solid #ffc107;
+    width: 20%;
+    margin-top: 1.6rem;
+}
+
+.counseller-about ul{
+    font-size: 1.6rem;
+}
+
+.counseller-about ul li{
+    list-style: square;
+}
+.counseller-about ul{
+    margin-left: 2rem;
+}
+
+
+/* ------------------------------- SESSION STYING ------------------------------- */
+
+
+.session-request{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2EF;
+    margin: 4rem auto;
+}
+
+.session-request .form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.form .entries{
+    display: flex;
+    flex-direction: column;
+}
+.form label{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.form .entries{
+    width: 45%;
+}
+.entries input{
+    height: 4rem;
+    width: 100%;
+    border: 2px solid #002147;
+    transition: all 0.4s ease-in-out;
+}
+.entries input:hover{
+    border: 2px solid #ffc107;
+}
+
+.entries select{
+    width: 100%;
+    height: 4rem;
+    border: 2px solid #002147;
+    transition: all 0.4s ease-in-out;
+}
+.entries select:hover{
+    border: 2px solid #ffc107;
+}
+.form .entries-1{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+.form textarea{
+    border: 2px solid #002147;
+    transition: all 0.4s ease-in-out;
+}
+.form textarea:hover{
+    border: 2px solid #ffc107;
+}
+.session-request  input[type="button"]{
+    display: block;
+    margin: 3rem;
+    width: 10rem;
+    height: 4rem;
+    background-color: #002147;
+    color: #fff;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+.session-request  input[type="button"]:hover{
+    background-color: #ffc107;
+}
+.form label::after{
+    content: "*";
+    color: red;
+}
+
+
+/* -------------------------------- RESPONSIVENESS ----------------------------- */
+
+@media (max-width: 900px){
+    .navigation .nav-items li{
+        font-size: 1.3rem;
+    }
+    .navigation{
+        max-width: 1200px;
+        width: 100%;
+    }
+    .section-2 .row4 input[type="button"]{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 55.5%;
+    }
+    .navigation{
+        position: relative;
+        height: 8rem;
+    }
+    .navigation .hamburger-menu{
+        display: flex;
+        flex-direction: column;
+        /* display: block; */
+        position: absolute;
+        width: 3rem;
+        height: 4rem;
+        top: 50%;
+        right: 2%;
+        transform: translate(-50%,-50%);
+        opacity: 1;
+    }
+    .navigation input[type="checkbox"]{
+        display: block;
+        position: absolute;
+        width: 3rem;
+        height: 4rem;
+        top: 50%;
+        right: 2%;
+        transform: translate(-50%,-50%);
+        opacity: 0;
+    }
+
+    .hamburger-menu span{
+        border: 2px solid #002147;
+        width: 100%;
+        background-color: #002147;
+        margin: 3px 0;
+    }
+    .nav-items{
+        background-color: #F2F2EF;
+        height: 70vh;
+        width: 100vw;
+        position: absolute;
+        top: -180%;
+        opacity: 0.99;
+        /* transform: translateY(-150%); */
+        transform: scaleY(0);
+        transition: all 0.4s ease-in-out;
+    }
+    .nav-items ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-items ul li{
+        border-bottom: 2px solid #bebebe;
+    }
+
+    .navigation input[type="checkbox"]:checked ~ .nav-items{
+        transform: scaleY(1);
+        top: 103%;
+    }
+
+    /* -------------------- MAIN INDEX PAGE -------------------------- */
+    .section-1 .row{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .section-1 .row .box{
+        width: 100%;
+    }
+
+    .inputs .row{
+        flex-direction: column;
+    }
+    .inputs .row4{
+        flex-direction: row;
+    }
+    .inputs .row input{
+        width: 100%;
+        height: 6.4rem;
+    }
+
+
+    .section-3 .jobs{
+        flex-direction: column;
+    }
+    .section-3 .jobs .job-img{
+        width: 100%;
+    }
+    .section-3 .jobs .job-content{
+        width: 100%;
+        margin-top: 4rem;
+        margin-left: 0;
+    }
+    .section-6 .numbers{
+        width: 100%;
+        margin: 4rem 0;
+    }
+    .section-6{
+        flex-direction: column;
+    }
+    .numbers h1{
+        font-size: 8rem;
+    }
+
+
+    .sec7-row{
+        flex-direction: column;
+    }
+    .sec7-row .content-box{
+        width: 100%;
+    }
+
+
+
+
+    .counselling-content .h3 {
+        border-right: none;
+    }
+    .counselling-content .h3 p{
+        font-size: 3rem;
+    }
+
+
+
+    .counselling-1{
+        flex-direction: column;
+    }
+    .counselling-1 .counseller{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .counseller img{
+        width: 100%;
+    }
+    .counseller-about p{
+        font-size: 2rem;
+        text-align:unset;
+    }
+    .counseller-about ul{
+        font-size: 2rem;
+    }
+
+
+
+
+    
+    .session-request .form{
+        flex-direction: column;
+    } 
+    .form .entries{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .form label{
+        font-size: 2rem;
+    }
+}
